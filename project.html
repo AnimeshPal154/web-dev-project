@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babu fitness</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS reset  */
+    body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/abs.jpg');
+       
+
+
+    }
+    .left{
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 55px;
+        top: 20px;
+
+    }
+    .mid{
+        display: block;
+        /* border: 2px solid green; */
+        margin: 20px 350px;
+        /* padding: 10px 30px; */
+        width: 33%;
+       
+
+
+    }
+    .right{
+        position: absolute;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+        right: 34px;
+        top: 20px;
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        
+        
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 20px 10px;
+        font-size: 17px;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: grey;
+    }
+    .left img{
+        width: 75px;
+        filter: invert(100%);
+    }
+    .left div{
+        line-height: 20px;
+        font-size: 16px;
+        text-align: center;
+    }
+    .btn{
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+        border: 2px solid rgb(109, 50, 23);
+        padding: 4px 10px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+    .btn:hover{
+        background-color: rgb(87, 18, 18);
+    }
+    .container{
+        border: 2px solid white;
+        margin: 95px 60px;
+        padding: 55px;
+        border-radius: 28px;
+        width: 33%;
+
+    }
+    .form-group input{
+        text-align: center;
+        display: block;
+        width: 400px;
+        padding: 2px;
+        margin: 10px auto;
+        font-size: 20px;
+        border-radius: 20px;
+
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 89%;
+        margin: 20px auto;
+    }
+
+</style>
+
+<body>
+    <header>
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/logo.png" alt="">
+            <div>Babu fitness</div>
+
+
+
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">FitnessCalculator</a></li>
+                <li><a href="#">contact us</a></li>
+            </ul>
+
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">call us Now</button>
+            <button class="btn">Email us</button>
+
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Raipur now</h1>
+        <form action="aaa.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+        
+            <button class="btn">Submit</button>
+
+        </form>
+    </div>
+</body>
+
+</html>
